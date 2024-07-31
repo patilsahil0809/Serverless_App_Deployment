@@ -1,0 +1,25 @@
+service: graphql-lambda
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+
+functions:
+  graphql:
+    handler: dist/handler.handler
+    events:
+      - http:
+          path: graphql
+          method: post
+    package:
+      artifact: deployment-package.zip
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+custom:
+  webpack:
+    webpackConfig: './webpack.config.js'
+    includeModules: true
+

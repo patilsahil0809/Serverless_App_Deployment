@@ -1,0 +1,1 @@
+(()=>{"use strict";var e,s={};e=s,Object.defineProperty(e,"__esModule",{value:!0}),e.graphql=void 0,e.graphql=async e=>({statusCode:200,body:JSON.stringify({message:"Hello from Lambda!"})}),module.exports=s})();

@@ -1,0 +1,25 @@
+{
+	  "name": "graphql-lambda",
+	  "version": "1.0.0",
+	  "description": "",
+	  "main": "index.js",
+	  "scripts": {
+	  	  "build": "webpack --config webpack.config.js",
+	  	  "test": "echo \"Error: no test specified\" && exit 1"
+	  },
+	  "keywords": [],
+	  "author": "",
+	  "license": "ISC",
+	  "devDependencies": {
+	  	  "@types/aws-lambda": "^8.10.142",
+	  	  "@types/node": "^22.0.0",
+	  	  "serverless": "^3.39.0",
+	  	  "serverless-offline": "^13.6.0",
+	  	  "serverless-webpack": "^5.14.1",
+	  	  "ts-loader": "^9.5.1",
+	  	  "typescript": "^5.5.4",
+	  	  "webpack": "^5.93.0",
+	  	  "webpack-cli": "^5.1.4",
+	  	  "webpack-node-externals": "^3.0.0"
+	  }
+}
